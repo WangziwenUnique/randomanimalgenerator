@@ -1,0 +1,15 @@
+# 允许所有搜索引擎爬虫访问
+User-agent: *
+
+# 允许访问
+Allow: /
+Allow: /privacy_policy
+Allow: /tos
+
+# 禁止访问敏感目录和文件
+Disallow: /api/
+Disallow: /.env
+
+# 网站地图
+Sitemap: https://randomanimalgenerator.art/sitemap.xml 
+

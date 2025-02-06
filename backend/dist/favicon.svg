@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 16 16" xml:space="preserve">
+    <desc>
+        Created with Fabric.js 5.4.0
+    </desc>
+    <defs/>
+    <rect x="0" y="0" width="100%" height="100%" fill="transparent"/>
+    <g transform="matrix(1 0 0 1 8.5 8.29)">
+        <g style="">
+            <g transform="matrix(1 0 0 1 0 0)">
+                <rect x="-7.052235709749124" y="-6.215" rx="0" ry="0" width="14.104471419498248" height="12.43" stroke="rgb(255,255,255)" stroke-opacity="0" stroke-width="1" stroke-dasharray="none" stroke-linecap="butt" stroke-dashoffset="0" stroke-linejoin="miter" stroke-miterlimit="4" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" opacity="1"/>
+            </g>
+            <g transform="matrix(1 0 0 1 -0.49 -1.1)">
+                <path paint-order="stroke" transform=" translate(-8, -7.2)" d="M 8.1 11.36 Q 5.61 11.36 4.43 10.3 Q 3.26 9.25 3.26 7.29 L 3.26 7.29 Q 3.26 5.32 4.43 4.18 Q 5.61 3.03 8.1 3.03 L 8.1 3.03 Q 11.57 3.03 12.75 5.42 L 12.75 5.42 Q 11.76 5.76 10.43 6.44 L 10.43 6.44 Q 10.11 5.83 9.42 5.53 Q 8.73 5.23 8.02 5.23 L 8.02 5.23 Q 6.96 5.23 6.45 5.79 Q 5.93 6.34 5.93 7.16 L 5.93 7.16 Q 5.93 8.04 6.48 8.59 Q 7.04 9.15 8.18 9.15 L 8.18 9.15 Q 9.1 9.15 9.64 8.85 Q 10.18 8.54 10.43 7.88 L 10.43 7.88 Q 11.33 8.37 12.74 8.97 L 12.74 8.97 Q 12.19 10.3 10.9 10.83 Q 9.61 11.36 8.1 11.36 L 8.1 11.36 Z" stroke-linecap="butt" stroke="rgb(255,255,255)" stroke-width="0" stroke-dasharray="none" stroke-dashoffset="0" stroke-linejoin="miter" stroke-miterlimit="4" fill="rgb(207,235,157)" fill-rule="nonzero" opacity="1"/>
+            </g>
+        </g>
+    </g>
+</svg>
