@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col items-center justify-center min-h-screen p-4">
-    <h1 class="text-4xl font-bold mb-4">Random Animal Generator</h1>
-    <p class="text-lg text-gray-600 mb-8">Generate random cute animal images</p>
+    <h1 class="text-4xl font-bold mb-4 dark:text-gray-100">Random Animal Generator</h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">Generate random cute animal images</p>
     
     <div class="relative mb-4">
       <button 
         @click="showTypeSelector = !showTypeSelector"
-        class="bg-blue-100 hover:bg-blue-200 text-blue-800 font-semibold py-2 px-4 rounded-lg flex items-center gap-2"
+        class="bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 text-blue-800 dark:text-blue-100 font-semibold py-2 px-4 rounded-lg flex items-center gap-2"
       >
         <span>{{ selectedType === 'all' ? 'All Animals' : selectedType.charAt(0).toUpperCase() + selectedType.slice(1) }}</span>
         <span class="transform transition-transform" :class="{ 'rotate-180': showTypeSelector }">▼</span>
@@ -14,11 +14,11 @@
       
       <div 
         v-if="showTypeSelector"
-        class="absolute top-full mt-1 w-48 bg-white rounded-lg shadow-lg py-2 z-10"
+        class="absolute top-full mt-1 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-lg py-2 z-10"
       >
         <button 
           @click="selectedType = 'all'; showTypeSelector = false; generateRandomAnimals()"
-          class="w-full text-left px-4 py-2 hover:bg-blue-50"
+          class="w-full text-left px-4 py-2 hover:bg-blue-50 dark:hover:bg-blue-900 text-gray-800 dark:text-gray-100"
         >
           All Animals
         </button>
@@ -26,7 +26,7 @@
           v-for="(_, type) in animalTypes" 
           :key="type"
           @click="selectedType = type; showTypeSelector = false; generateRandomAnimals()"
-          class="w-full text-left px-4 py-2 hover:bg-blue-50 capitalize"
+          class="w-full text-left px-4 py-2 hover:bg-blue-50 dark:hover:bg-blue-900 capitalize text-gray-800 dark:text-gray-100"
         >
           {{ type }}
         </button>
@@ -44,7 +44,7 @@
       <div 
         v-for="(animal, index) in selectedAnimals" 
         :key="index"
-        class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105"
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-gray-900 overflow-hidden transform transition-all duration-300 hover:scale-105"
       >
         <img 
           :src="'/images/' + animal"
@@ -53,7 +53,7 @@
           loading="lazy"
         />
         <div class="p-4">
-          <h3 class="text-lg font-semibold capitalize">
+          <h3 class="text-lg font-semibold capitalize text-gray-800 dark:text-gray-100">
             {{ animal.replace('.webp', '').replace(/-/g, ' ') }}
           </h3>
         </div>
@@ -61,18 +61,18 @@
     </div>
 
     <div class="max-w-4xl mx-auto px-4 mb-16">
-      <h2 class="text-3xl font-bold mb-6">About Our Random Animal Generator</h2>
-      <p class="text-gray-700 mb-8">
+      <h2 class="text-3xl font-bold mb-6 dark:text-gray-100">About Our Random Animal Generator</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-8">
         Discover the fascinating world of animals with our Random Animal Generator tool. Each click brings you a unique selection of 6 different animal images, perfect for education, inspiration, or just pure entertainment.
       </p>
 
-      <h3 class="text-2xl font-semibold mb-4">How Our Random Animal Generator Works</h3>
-      <p class="text-gray-700 mb-8">
+      <h3 class="text-2xl font-semibold mb-4 dark:text-gray-100">How Our Random Animal Generator Works</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-8">
         Our Random Animal Generator uses a sophisticated algorithm to select 6 unique animals from our extensive collection. Each generated set is completely random, ensuring a fresh and exciting experience every time you click the generate button.
       </p>
 
-      <h3 class="text-2xl font-semibold mb-4">Features of the Random Animal Generator</h3>
-      <ul class="list-disc list-inside text-gray-700 mb-8 space-y-2">
+      <h3 class="text-2xl font-semibold mb-4 dark:text-gray-100">Features of the Random Animal Generator</h3>
+      <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mb-8 space-y-2">
         <li>Instant generation of 6 unique animal images</li>
         <li>High-quality animal photographs</li>
         <li>Educational animal names and descriptions</li>
