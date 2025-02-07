@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col items-center mb-6 md:mb-8">
         <NuxtLink to="/" class="flex items-center space-x-2 mb-4 md:mb-6">
-          <span class="font-meddon text-gray-900 dark:text-white text-xl md:text-2xl">Best AI Humanize</span>
+          <span class="font-meddon text-gray-900 dark:text-white text-xl md:text-2xl">Random Animal</span>
         </NuxtLink>
         
         <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm md:text-base text-gray-600 dark:text-gray-300">
