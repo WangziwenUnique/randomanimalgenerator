@@ -111,13 +111,15 @@ const animalTypes = {
   'reptiles': ['snake', 'turtle', 'thorny devil'],
   'amphibians': ['toad', 'salamander'],
   'fish': ['starfish']
-}
+} as const
+
+type AnimalType = keyof typeof animalTypes | 'all'
 
 const selectedAnimals = ref<string[]>([])
-const selectedType = ref<string>('all')
+const selectedType = ref<AnimalType>('all')
 const showTypeSelector = ref(false)
 
-const getAnimalsByType = (type: string) => {
+const getAnimalsByType = (type: AnimalType) => {
   if (type === 'all') {
     return animalImages
   }
