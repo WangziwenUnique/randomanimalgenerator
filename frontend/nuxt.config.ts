@@ -35,6 +35,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Generate and discover random animals from around the world. Learn about unique and fascinating creatures with our free random animal generator tool!' },
         { name: 'format-detection', content: 'telephone=no' },
+        { name: 'google-adsense-account', content: 'ca-pub-5792983464898304' },
         // Open Graph
         { property: 'og:title', content: 'Random Animal Generator - Discover Amazing Animals' },
         { property: 'og:description', content: 'Generate and discover random animals from around the world. Learn about unique and fascinating creatures with our free random animal generator tool!' },
@@ -54,6 +55,11 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Meddon&display=swap' }
       ],
       script: [
+        {
+          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5792983464898304',
+          async: true,
+          crossorigin: 'anonymous'
+        },
         {
           src: 'https://accounts.google.com/gsi/client',
           async: true,
